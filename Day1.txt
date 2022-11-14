@@ -1,0 +1,41 @@
+1. JSON-----
+Java Script Object Notation
+Used when data is sent from server to a web page.
+It supports data structures like objects and arrays.
+Originated from JavaScript.
+
+2. HTTP Status Codes------
+A 3-digit integer
+1st digit defines class of response and last two digits do not have any categorization role.
+5 values for the 1st digit - 1xx, 2xx, 3xx, 4xx, 5xx
+1xx - Informational - The request has been received and the process is continuing. 
+2xx - Success - The action was successfully received, understood, and accepted.
+3xx - Redirection - It means further action must be taken in order to complete the request.
+4xx - Client Error - Request contains Incorrect Syntax and cannot be fulfilled
+5xx - Server Error - Server failed to fulfill an apparent valid request
+
+3. 500 Status Code -----
+Internal Server Error
+
+4. No-Sql Databases-----
+Non-relational database
+Provides mechanism to store and retrieve data in other than tabular relations model used in relational database
+Used to store big data and real-time web applications
+Ex - mongoDB
+
+5. IIS------
+Internet Information Services
+IIS is a Microsoft Web Server running on Windows OS
+
+
+ASSIGNMENT 2
+
+1. Display Images in Title Bar ----
+Image can be displayed in Title Bar by using <link> element with rel attribute in <head> tag of the HTML file.
+It should be a square image
+Convert the image to .ico format
+Rename the image to favicon.ico
+Save the image in the same folder as the HTML file.
+
+2. ALT attribute in img tag -----
+The 'alt' attribute in the <img> tag is the text that gives the description of the image incase the image is not loading.
