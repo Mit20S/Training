@@ -1,0 +1,11 @@
+1. To style the first letter of the paragraph-------
+To style the first letter of a paragraph, we can use the <span> tag.
+<span> is a paired tag
+
+3. Using ~ and > in CSS
+
+~ is a Sibling Selector.
+It will target the siblings of the element specified.
+For example: div ~ p will target all the <p> tags which direct child of div except for the the first <p> tag.
+
+> is Selector that selects Direct Child of the <div> element.
