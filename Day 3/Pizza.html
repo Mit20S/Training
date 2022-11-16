@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div{
+            background-color: rgba(247, 192, 91, 0.813);
+        }
+
+        label{
+            font-family: Arial;
+            font-size: 10px;
+        }
+
+        .class1{
+            width:50px;
+            margin-left: 2px;
+            text-align: center;
+            font-size: 9px;
+        }
+
+        .class2{
+            width:90px;
+        }
+
+        .class3{
+            width:100%;
+            background-color: red;
+            color:white;
+            height: 30px;
+            border-radius: 10px;
+            border-collapse: collapse;
+        }
+
+        fieldset{
+            background-color: white;
+        } 
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            background: url("Image1.jpg") ;
+        }
+    </style>
+</head>
+
+<body>
+<form action="order.php" method="POST">
+    <fieldset>
+        <div>
+            <h1>WELCOME TO ITALIAN PIZZA!</h1>
+            <p>We deliver pizza in 40 minutes max. If not - Pizza's on us!</p>
+        </div>
+
+        <br />
+
+        <label>Email</label>
+        <br />
+        <input class = "class2" type="text" name = 'email' />
+
+        <br />
+        <br />
+
+        <label>Phone</label>
+        <br />
+        <input class = "class1" type="text" name = 'areaph' placeholder="Area" />
+        <input class = "class1" type="text" name = 'localph1' placeholder="Local" />
+        <input class = "class1" type="text" name = 'localph2' placeholder="Local" />
+
+        <br/>
+        <br/>
+
+        <label>Number of Slices</label>
+        <br />
+        <input class = "class2" type="text" name = 'slices' />
+
+        <br/>
+        <br/>
+
+        <label>Pizza Size</label>
+        <br />
+        <input type="radio" name = 'size' />
+        <label>8 inch</label>
+        <input type="radio" name = 'size' />
+        <label>10 inch</label>
+        <input type="radio" name = 'size' />
+        <label>12 inch</label>
+        <input type="radio" name = 'size' />
+        <label>14 inch</label>
+
+        <br/>
+        <br/>
+
+        <label>Toppings</label>
+        <br />
+        <input type="checkbox" name = 'top1' />
+        <label>Pepperoni</label>
+        <input type="checkbox" name = 'top2' />
+        <label>Onions</label>
+        <input type="checkbox" name = 'top3' />
+        <label>Mushrooms</label>
+        <input type="checkbox" name = 'top4' />
+        <label>Sausage</label>        
+
+        <br/>
+        <br/>
+
+        <label style="color:red">*</label>
+        <input type="checkbox" name = 'terms' />
+        <label>I agree to terms and conditions.</label>        
+
+    </fieldset>
+
+    <br/>
+    
+    <input class = "class3"type="submit" value="Order Now">
+</form>    
+</body>
+</html>

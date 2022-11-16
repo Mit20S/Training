@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #header{
+            background-color: rgba(113, 198, 247, 0.9);
+            color: white;
+            font-size: 13px; 
+            font-family: Arial;
+        }
+
+        p{
+            margin: 0;
+            padding: 15px;
+        }
+
+        #footer{
+            background-color: gainsboro;
+            text-align: center;
+            color: gray;  
+            font-size: 13px; 
+            font-family: Arial;
+        }
+
+        .card{
+            margin-right: 5px;
+        }
+
+        .parent{
+            display: flex;
+            margin:0;
+        }
+
+        .child{
+            width:50%;
+        }
+
+        .cvv{
+            width: 25%;
+
+        }
+
+        .complete{
+            background-color: orange;
+            color: white;
+            text-align: center;
+            border: 1px solid orange;
+            height:30px;
+            margin:5px;
+            border-radius: 3px;
+        }
+
+        .info{
+            padding: 15px;
+            font-family: Arial;
+            font-size: 15px;
+            color:rgba(108, 140, 199, 0.916);
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+           
+            background-color: rgb(74, 73, 73);
+        }
+
+        form{
+            background-color: white;
+                 
+        }
+    </style>
+</head>
+
+<body>
+    <form action="order.php" method="POST">
+        <div id="header">
+            <p>This is a secure 128-bit SSL encrypted payment. You are safe.</p>
+        </div>
+<div class="info">
+        <input type="radio" name = 'paymode' />
+        <label class="card">Credit Card (Visa, Masterard)</label>
+        <input type="radio" name = 'paymode' />
+        <label class="card">PayPal</label>
+    
+        <br/>
+        <br/>
+
+        <label>Card Number</label>
+        <span style="font-size:10px">The 16 digits on front of your card</span>
+        <br/>
+        <input type="text" name = 'card number' />
+
+        <br/>
+        <br/>
+    <div class="parent">
+        <div class="child">
+            <label>Expiration Date</label>
+            <br/>
+        <select name = 'month'>
+            <option value="none" disabled selected>Month</option>
+            <option value="Jan">Jan</option>
+            <option value="Feb">Feb</option>
+            <option value="Mar">Mar</option>
+            <option value="Apr">Apr</option>
+            <option value="May">May</option>
+            <option value="Jun">Jun</option>
+            <option value="Jul">Jul</option>
+            <option value="Aug">Aug</option>
+            <option value="Sep">Sep</option>
+        </select>
+        <span>/</span>
+        <select name = 'year'>
+            <option value="none" disabled selected>Year</option>
+            <option value="2002">2002</option>
+            <option value="2003">2003</option>
+            <option value="2004">2004</option>
+            <option value="2005">2005</option>
+            <option value="2006">2006</option>
+            <option value="2007">2007</option>
+            <option value="2008">2008</option>
+            <option value="2009">2009</option>
+            <option value="2010">2010</option>
+            <option value="2011">2011</option>
+        </select>
+        </div>
+
+        <div class="child">
+            <label>CVV2/CVC2</label>
+            <br/>
+            <div class="parent">
+            <input  class ="cvv" type="text" name = 'cvv' />
+                <span style="font-size: 10px ;">The last 3 digits displayed on the back of your card</span>
+            </div>
+            <!-- <pre>
+                The last 3 digits displayed on the back of your card
+            </pre> -->
+        </div>
+
+    </div>
+
+        <br/>
+        <br/>
+        
+        <label>Full Name on the Card</label>
+        <br/>
+        <input type="text" name = 'full name' />
+</div>
+
+        <div id="footer">
+            <p>You will be charged $29.00 every months</p>
+        </div>
+
+    </form>
+
+    <input  class="complete" type="submit" value ="CompleteTransaction"/>
+</body>
+</html>
