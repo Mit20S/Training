@@ -1,0 +1,12 @@
+1. Why do we use Position in CSS -----
+Specifies the type of positioning method used for an element
+
+2. Difference between property values Relative and Absolute in Position property-----
+absolute - The element is positioned relative to its first positioned (not static) ancestor element
+relative - The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position
+
+5. How to hide an element uisng CSS? -----
+Ans: 1) display: none
+     2) visibility: hidden;
+     3) Use scale (0) to shrink an element until it’s no longer visible. 
+     4) Apply translate (-999px, 0px) to shift an element off screen.

@@ -24,4 +24,4 @@ This may include security tokens, or the name of the relevant row in the databas
 
 5. Differnce between <submit /> and <button></button>------
 Submit: The button submits the form data to the server. This is the default if the attribute is not specified, or if the attribute is dynamically changed to an empty or invalid value.
-Button: The button submits the form data to the server. This is the default if the attribute is not specified, or if the attribute is dynamically changed to an empty or invalid value. It is a simple button which is used to perform some operation by using javascript.
+Button: The button submits the form data to the server. It is a simple button which is used to perform some operation by using javascript.
