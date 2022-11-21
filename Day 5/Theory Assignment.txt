@@ -1,3 +1,5 @@
 1. How to play youtube videos in HTML------
-In the video tag, src should be set to the youtube link thats required.
+Define an <iframe> element in your web page
+Let the src attribute point to the video URL
+Use the width and height attributes to specify the dimension of the player
 
