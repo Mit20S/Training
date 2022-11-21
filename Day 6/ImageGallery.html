@@ -2,12 +2,24 @@
 <html lang="en">
 <head>
     <style>
+
         img{
-            width: 300px;
-            height: 150px;
+            width: 250px;
+            height: 100px;
             border: 3px solid black;
         }
 
+        .main{
+            text-align: center;
+            column-count: 2;
+            column-gap: 5px;
+            width: min-content;
+        }
+
+        .top{
+            display: flex;
+            justify-content: center;
+        }
 
 
         #img1{
@@ -25,28 +37,15 @@
         #img4{
             border-top-left-radius: 15px;
         }
-
-
-        img{
-            width: 95%;
-            height: 100px;
-            border: 3px solid black;
-        }
-
-        div{
-            text-align: center;
-            column-count: 2;
-            column-gap: 2px;
-        }
     </style>
 </head>
 <body>
     <hr/>
-    <div>
-        <div>
+    <div class="top">
+        <div class="main">
             <img id="img1" src = "Image1.jpg"/>
-            <img id="img2" src = "Image2.jpg"/>
-            <img id="img3" src = "Image3.jpg"/>
+            <img id="img3" src = "Image2.jpg"/>
+            <img id="img2" src = "Image3.jpg"/>
             <img id="img4" src = "Image4.jpg"/>
         </div>
     </div>

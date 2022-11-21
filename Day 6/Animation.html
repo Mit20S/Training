@@ -5,27 +5,31 @@
 <style> 	
 	@keyframes   Animation1
 	{
-			from {    width :  50px;   height :  50px;  	transform :   rotate(0deg);  }
-			to {    width :  250px;   height :  250px;   transform :   rotate(360deg); }
+			from { 
+				left:0;
+				/* margin-left: 0px; */
+			 }
+			to { 
+				left:90%;
+				/* margin-left: 90%;  */
+			}
 	}
 
 	#img1 	
 	{
-		width: 50px;
-		height : 50px;		 
-		padding: 2px;  	
-		
+		position:relative;
+		height:150px;
+		width:100px;
 		animation-name  :  Animation1;
-		animation-duration  :   4s;
-		animation-delay  :   2s;
-		animation-iteration-count : 4;
-		animation-direction  :  alternate;		
+		animation-duration  :   2s;
+		/* animation-delay  :   0s; */
+		animation-iteration-count : 4;	
+		animation-direction: alternate;	
 	}
 </style>
 </head>
 <body>
-	<h1> Working with Animations CSS3 </h1>
 	<hr></hr> 
-	<img id="img1"   src="Globe.png" />  
+	<img id="img1"   src="download.png"/>  
 </body>
 </html>
