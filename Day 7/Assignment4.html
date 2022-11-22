@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-4</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.5/dist/css/foundation.min.css" crossorigin="anonymous">
+
+    <style>
+        header{
+            text-align: center;
+            background-color: black;
+            color: whitesmoke;
+        }
+        .box{
+            /* width: 500px; */
+            padding:10px;
+            /* height:500px; */
+            border:2px solid gray;
+        }
+        .outbox {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .server{
+            text-align: center;
+            width:100%;
+        }
+        .button:hover{
+            color:black !important;
+            font-weight: bold !important;
+            background-color: rgb(39, 128, 216) !important;
+            border: 2px solid rgb(39, 128, 216);
+        }
+    </style>
+</head>
+<body>
+    <header><h1>CRUD Operations</h1></header>
+    <hr/>
+    <br/>
+
+    <div class="outbox">
+    <div class="box">
+        <form>
+            <div>
+            <label class="text-center">Employee Number:</label>
+            <input type="text" placeholder="Number" class="text-center"/>
+            <label class="text-center">Employee Name:</label>
+            <input type="text" placeholder="Name" class="text-center"/>
+            <label class="text-center">Employee Role:</label>
+            <input type="text" placeholder="Role" class="text-center"/>
+            </div>
+
+            <div class="text-center">
+                <button class="hollow button" href="#">Create</button>
+                <button class="hollow button" href="#">Read</button>
+                <button class="hollow button" href="#">Update</button>
+                <a class="button primary" href="#">Delete</a>                
+            </div>
+            <button class="hollow button server" href="#">SUBMIT TO SERVER</button>
+            
+        </form>
+    </div>
+    </div>
+
+</body>
+</html>
