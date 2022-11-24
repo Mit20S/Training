@@ -3,3 +3,4 @@ The viewport is the user's visible area of a web page.
 The viewport varies with the device, and will be smaller on a mobile phone than on a computer screen.
 <meta> tag is used to take control over the viewport.
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+

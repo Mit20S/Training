@@ -1,0 +1,19 @@
+1. Details about List attribute----
+<datalist> contains pre-defined options for an input element.
+A list is created using <input/> tag with a name.
+The name of the list is given as an id in <datalist> tag.
+<input list="books"/>
+<datalist id="books">
+<option value="President is Missing"/>
+<option value="Thousand Splendid Suns"/>
+<option value="The Kite Runner"/>
+</datalist>
+
+2. Web Crawlers-------
+A web crawler downloads and indexes content from all over the Internet. 
+The goal of the web crawler is to learn what every webpage on the web is about, so that information when needed can be retrieved.
+A web crawler bot is like someone who goes through all the books in a disorganized library and puts together a card catalog so that anyone who visits the library can quickly and easily find the information they need. To help categorize and sort the library's books by topic, the organizer will read the title, summary, and some of the internal text of each book to figure out what it's about.
+
+3. Why do you use backlink in SEO?
+A backlink is a link created when one website links to another. Backlinks are important to SEO since more backlinks to a website are a signal that others support the content
+

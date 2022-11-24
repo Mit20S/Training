@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+         .logo{
+            height: 100px;
+        }
+
+        header{
+            display: flex;
+        }
+        .heading{
+            margin:30px;
+            /* text-align: center; */
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <img src="Logo1.png" class="logo">
+        <h1 class="heading text-info">Customer Data</h1>
+    </header>
+    <hr class="border border-2 border-success"/>
+
+    <div class="text-center">
+        <button class="btn btn-primary" onclick="fn_getData()">Get Data</button>
+        <br/>
+        <br/>
+        <div class="px-3" id="borderdisplay">
+        <h1 id="name"></h1>
+        <br/>
+        <br/>
+        <h4 id="date"></h4>
+        </div>
+        <!-- <p id="p3"></p> -->
+    </div>
+
+
+    <script>
+        const div = document.getElementById("borderdisplay");
+        function fn_getData(){
+            div.classList.add("border");
+            div.classList.add("border-2");
+            
+            var dataStr = localStorage.getItem("userData");
+
+            var paraObj1 = document.getElementById("name");
+            var paraObj2 = document.getElementById("date");
+
+            if(dataStr == null)
+            {
+                paraObj1.innerHTML = "Welcom Guest User";
+                paraObj2.innerHTML = "";
+            }
+
+            var dataObj = JSON.parse(dataStr);
+            
+            paraObj1.innerHTML = "Welcome "+ dataObj.username;
+
+            paraObj2.innerHTML = "Joining Date: " + dataObj.userjdate;
+
+            var body = document.body;
+            body.style.backgroundColor = dataObj.usercolor;
+
+            if (dataObj.usercolor == "#000000"){
+                paraObj1.classList.add("text-white");
+                paraObj2.classList.add("text-white");
+                return;
+            }
+
+
+
+
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microdata Assignment</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <style>
+        img{
+            width:100px;
+            height:100px;
+        }
+        header
+        {
+            display: flex;
+        }
+        .heading{
+            margin-top: 20px;
+            color:yellow;
+        }
+
+        .data{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+</head>
+<body>
+        <header class="bg-black bg-gradient" itemscope>
+            <img src="Logo.png" itemprop="logo"/>
+            <h1 class="heading">Yellow Pages</h1>
+        </header>
+    <br/>
+    <br/>
+    <br/>
+    <div class="data" itemscope>
+        <ul class="list-inline">
+            <li class="list-inline-item fs-3 text-success fw-semibold">Name</li>
+            <li class="list-inline-item fs-3" itemprop="name">Sherlock Holmes</li>
+        </ul>
+
+        <ul class="list-inline">
+            <li class="list-inline-item fs-3 text-success fw-semibold">Place</li>
+            <li class="list-inline-item fs-3" itemprop="place">221B Baker Street in London</li>
+        </ul>
+
+        <ul class="list-inline">
+            <li class="list-inline-item fs-3 text-success fw-semibold">Movie</li>
+            <li class="list-inline-item fs-3" itemprop="movie">The House of Fear</li>
+        </ul>
+
+        <ul class="list-inline">
+            <li class="list-inline-item fs-3 text-success fw-semibold">Food and Drink</li>
+            <li class="list-inline-item fs-3" itemprop="food">Loaf of Bread and Red Burgundy</li>
+        </ul>
+
+        <ul class="list-inline">
+            <li class="list-inline-item fs-3 text-success fw-semibold">Restaurant</li>
+            <li class="list-inline-item fs-3" itemprop="restaurant">Purl</li>
+        </ul>
+        <br/>
+        <a href="#" class="text-secondary fw-semibold" itemprop="url">Click here to know more >></a>
+
+    </div>
+</body>
+</html>
