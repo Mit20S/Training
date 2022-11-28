@@ -7,3 +7,10 @@ CSS classes can be added or removed using classList method in JavaScript.
 
 example --- var element1 = document.getElementById("mypage");
             element1.classList.add("my-class");
+
+2. What is CDN? And its advantages?
+CDN stands for Content Delivery Network. They are a group of servers that work together to provide fast and safe delivery of Internet content.
+
+
+3. How to align justify in Bootstrap?
+There is no justify alignment in Bootstrap.
