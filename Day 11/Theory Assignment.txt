@@ -1,0 +1,9 @@
+1. How to add or remove CSS classes to html elements using JavaScript?
+CSS classes can be added or removed using classList method in JavaScript.
+-add – Adds a class to an element’s list of classes. If class already exists in the element’s list of classes, it will not add the class again.
+-remove – Removes a class from an element’s list of classes. If class does not exist in the element’s list of classes, it will not throw an error or exception.
+-toggle – Toggles the existence of a class in an element’s list of classes
+-contains – Checks if an element’s list of classes contains a specific class
+
+example --- var element1 = document.getElementById("mypage");
+            element1.classList.add("my-class");
