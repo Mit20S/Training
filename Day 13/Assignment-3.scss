@@ -1,0 +1,22 @@
+.box{
+    border:1px solid black;
+    margin:2px;
+    text-align: center;
+    padding: 10px;
+}
+
+// $baseheight:10px;
+
+@for $i from 1 through 6 {
+    .box-#{$i} {
+        font-size: $i + 2rem;
+        @if ($i <= 3){
+            color:red;
+            border-color: red;
+        }
+        @else{
+            color:green;
+            border-color: green;
+        }
+    }    
+}

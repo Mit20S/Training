@@ -1,3 +1,16 @@
+/* ---------BODY------------------ */
+.backImg{
+    background-image: url("background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* ---------Background White---------- */
+.backcolor{
+    background-color: white;
+}
+
 /* ----TOP BAR---- */
 .topbaricon{
     font-family: "Icofont";
@@ -158,3 +171,112 @@
     justify-content: center;
     align-items: center;
 }
+
+/* ---------REQUEST BUTTON------ */
+.formBtn{
+    background-color: #56be08;
+    color: white;
+}
+
+.formBtn:hover{
+    background-color: black;
+    color: white;
+}
+
+/* -------TESTIMONIAL-------- */
+.testimonial{
+    background-image: url("testimonial.jpg");
+    height: 90vh;
+}
+
+.maintext{
+    color: white;
+
+}
+
+.underlineImg{
+    text-align: center;
+}
+
+/* ---------CAROUSEL------------- */
+.imgCarousel{
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 200px;
+    border-radius: 10px;
+}
+
+/* -------------CUSTOMER SUPPORT-------------- */
+.backgreen{
+    background-color: rgba(86, 190, 8, 0.5);
+}
+
+.carouselIcon{
+    font-family: "Icofont";
+}
+
+/* ----------FOOTER---------- */
+.footerImg{
+    width:250px;
+}
+
+footer{
+    background-color: #3a3a3a;
+}
+
+.footerfont{
+    color: white;
+    text-decoration: none;
+    font-size: small;
+}
+
+.footerfont:hover{
+    color: #56be08;
+}
+
+.footerIcon{
+    color: white;
+    font-family: "Icofont";
+
+}
+
+.webIcons{
+    font-family: "Icofont";
+    color: white;
+}
+
+.webIcons:hover{
+    color:black
+}
+
+.iconbg{
+    background-color: #56be08;
+    border: 1px solid #56be08;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.iconbg:hover{
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+
+}
+.webIconLink{
+    text-decoration: none;
+}
+
+.footer-end{
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+
+
+  /* ---------MODAL-------------- */
+  .modal1{
+    border-radius: 0px;
+  }

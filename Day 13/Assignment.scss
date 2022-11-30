@@ -1,0 +1,36 @@
+$primary: 10px 10px 20px yellow;
+$secondary: 20px 20px 30px green;
+
+$height: 40rem;
+$square: 25rem;
+$circle: 50%;
+
+@mixin shacol($shadowcolor: blue, $imgShape: "rectangle")
+{
+
+    @if($imgShape == "rectangle"){
+        box-shadow: 5px 5px 10px $shadowcolor;
+        height: $height;
+        width: $square;
+    }
+
+    @if($imgShape == "square"){
+        box-shadow: $primary;
+        height: $square;
+        width: $square;
+    }
+    
+    @else if($imgShape == "circle"){
+        box-shadow: $secondary;
+        border-radius: $circle;
+    }
+}
+
+
+img{
+    @include shacol($shadowcolor: purple, $imgShape: "circle");
+}
+
+p{
+    font-size: 30px;
+}
