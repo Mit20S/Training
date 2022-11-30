@@ -1,0 +1,230 @@
+/* ----TOP BAR---- */
+.topbaricon{
+    font-family: "Icofont";
+    color: #56be08;
+}
+
+.topbarfont{
+    text-decoration: none;
+    font-weight: bold;
+    color:black;
+}
+
+.btn-a{
+    text-decoration: none;
+    border:1px solid #56be08;
+    border-radius: 25px;
+    padding: 5px 20px;
+    background-color: #56be08;
+
+}
+
+#topbariconLogin{
+    font-family: "Icofont";
+    color: white;
+}
+
+#topbarfontLogin{
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+}
+
+#topbariconLogin:hover{
+    background-color: black;
+    font-family: "Icofont";
+    color: white;
+}
+
+#topbarfontLogin:hover{
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+    background-color: black;
+}
+
+.btn-a:hover{
+    background-color: black;
+    border:1px solid black;
+}
+
+/* ----NAVIGATION BAR---- */
+
+.logoImg{
+    width: 200px;
+}
+
+.navBarFont{
+    text-decoration: none;
+    font-weight: bold;
+    color: black
+}
+
+.navBarDropIcon{
+    font-family: "Icofont";
+}
+
+.navBar{
+    display:flex;
+}
+
+.navBarDropDown{
+    display:flex;
+}
+
+.dropbtn{
+    border:none;
+    background-color: white;
+    font-weight: bold;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    min-width: 180px;
+    padding: 20px 0px;
+    
+}
+
+.dropdown-content a{
+    color:rgb(8, 8, 56);
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: small;
+    
+}
+
+.dropdown-content a:hover{
+    color:#56be08;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn:hover{
+    color:#56be08;
+}
+
+.navBarFont:hover{
+    color:#56be08;
+}
+
+/* ----GREEN BANNER---- */
+.banner{
+    background-color: #2d673c;
+    padding: 90px 0px;
+}
+
+.contact{
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgContact{
+    height:250px;
+    text-align: center;
+}
+
+/* --------TABS BAR--------- */
+.tabsBar{
+    text-decoration: none;
+    color: rgb(199, 197, 197);
+}
+
+/* -----------COLUMNS---------- */
+
+.addressIcon{
+    font-family: "Icofont";
+}
+
+/* ----------FORM---------------- */
+.formBtn{
+    background-color: #56be08;
+    color: white;
+}
+
+.formBtn:hover{
+    background-color: black;
+    color: white;
+}
+
+.formImg{
+    width:500px;
+    height:400px;
+}
+
+/* ----------FOOTER---------- */
+.footerImg{
+    width:250px;
+}
+
+footer{
+    background-color: #3a3a3a;
+}
+
+.footerfont{
+    color: white;
+    text-decoration: none;
+    font-size: small;
+}
+
+.footerfont:hover{
+    color: #56be08;
+}
+
+.footerIcon{
+    color: white;
+    font-family: "Icofont";
+
+}
+
+.webIcons{
+    font-family: "Icofont";
+    color: white;
+}
+
+.webIcons:hover{
+    color:black
+}
+
+.iconbg{
+    background-color: #56be08;
+    border: 1px solid #56be08;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.iconbg:hover{
+    background-color: white;
+    border: 1px solid white;
+    color: black;
+
+}
+.webIconLink{
+    text-decoration: none;
+}
+
+.footer-end{
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  

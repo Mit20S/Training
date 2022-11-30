@@ -1,0 +1,160 @@
+/* ----TOP BAR---- */
+.topbaricon{
+    font-family: "Icofont";
+    color: #56be08;
+}
+
+.topbarfont{
+    text-decoration: none;
+    font-weight: bold;
+    color:black;
+}
+
+.btn-a{
+    text-decoration: none;
+    border:1px solid #56be08;
+    border-radius: 25px;
+    padding: 5px 20px;
+    background-color: #56be08;
+
+}
+
+#topbariconLogin{
+    font-family: "Icofont";
+    color: white;
+}
+
+#topbarfontLogin{
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+}
+
+#topbariconLogin:hover{
+    background-color: black;
+    font-family: "Icofont";
+    color: white;
+}
+
+#topbarfontLogin:hover{
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+    background-color: black;
+}
+
+.btn-a:hover{
+    background-color: black;
+    border:1px solid black;
+}
+
+/* ----NAVIGATION BAR---- */
+
+.logoImg{
+    width: 200px;
+}
+
+.navBarFont{
+    text-decoration: none;
+    font-weight: bold;
+    color: black
+}
+
+.navBarDropIcon{
+    font-family: "Icofont";
+}
+
+.navBar{
+    display:flex;
+}
+
+.navBarDropDown{
+    display:flex;
+}
+
+.dropbtn{
+    border:none;
+    background-color: white;
+    font-weight: bold;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    min-width: 180px;
+    padding: 20px 0px;
+    
+}
+
+.dropdown-content a{
+    color:rgb(8, 8, 56);
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: small;
+    
+}
+
+.dropdown-content a:hover{
+    color:#56be08;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn:hover{
+    color:#56be08;
+}
+
+.navBarFont:hover{
+    color:#56be08;
+}
+
+/* ----GREEN BANNER---- */
+.banner{
+    background-color: #2d673c;
+    padding: 90px 0px;
+}
+
+.publicsector{
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imgPS{
+    height:250px;
+    text-align: center;
+}
+
+/* --------TABS BAR--------- */
+.tabsBar{
+    text-decoration: none;
+    color: rgb(199, 197, 197);
+}
+
+/* -------COLUMN---------- */
+.imgColumn{
+    width:450px;
+    height:250px;
+    margin:0px 80px;
+}
+
+.columnContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
