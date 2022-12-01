@@ -1,0 +1,7 @@
+1. container-flud 
+.container-fluid is used  for a full width container, spanning the entitre width of the container.
+
+2. What is CDN? What are its advantages?
+CDN stands for Content Delivery Netwrok. 
+It increases data access by increasing bandwidth and reducing access latency.
+It is a global network of servers that work together to provide ultra-fast delivery of Internet content, such as web pages and streaming video. 

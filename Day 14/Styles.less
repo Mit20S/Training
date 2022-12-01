@@ -1,0 +1,44 @@
+@import "Header";
+
+a{
+    text-decoration: none;
+    color: black;
+    &:hover{
+        text-decoration: underline;
+        font-weight: bold;
+    }
+}
+
+.button{
+    border-radius: 40px;
+    width:250px;
+    height:50px;
+}
+
+.fancybutton{
+    &:extend(.button);
+    background-color: black;
+    color: white;
+}
+
+// -------MIXIN-------
+.theme(@themeColor){
+    border: 3px solid @themeColor;
+    padding:5px;
+}
+
+.circle{
+    .theme(darkblue);
+    border-radius: 50%;
+}
+
+.square{
+    .theme(darkcyan);
+}
+
+
+
+
+
+
+

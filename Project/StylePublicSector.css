@@ -81,6 +81,12 @@
     display:flex;
 }
 
+.stickynavBar{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
 .navBarDropDown{
     display:flex;
 }
@@ -278,5 +284,49 @@ footer{
 
   /* ---------MODAL-------------- */
   .modal1{
-    border-radius: 0px;
+    border-radius: 0%;
   }
+
+  .button{
+    background-color: #56be08;
+    border: 1px solid #56be08;
+    border-width: 10px;
+
+  }
+
+  .formWidth{
+    width:100%
+  }
+
+  .submitBtn{
+    background-color: #56be08;
+    color: white;
+  }
+
+  .submitBtn:hover{
+    background-color: black;
+    color:white;
+  }
+
+  .borderstyle{
+    border-left: 5px solid #56be08;
+  }
+
+  @media screen and (max-width: 1000px){
+    .topbarmq{
+        display: flex;
+        justify-content: center;
+    }
+
+    .navBar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navBarDropDown{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+  

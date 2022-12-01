@@ -68,6 +68,12 @@
     display:flex;
 }
 
+.stickynavBar{
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
 .navBarDropDown{
     display:flex;
 }
@@ -120,6 +126,12 @@
 .navBarFont:hover{
     color:#56be08;
 }
+
+.backcolor{
+    background-color: white;
+}
+
+
 
 /* ----GREEN BANNER---- */
 .banner{
@@ -226,5 +238,5 @@ footer{
     background-color: black;
     padding-top: 25px;
     padding-bottom: 25px;
-  }
-  
+}
+

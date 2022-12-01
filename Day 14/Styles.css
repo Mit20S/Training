@@ -1,0 +1,42 @@
+header {
+  text-align: center;
+  text-shadow: 2px 2px indianred;
+  font-size: larger;
+}
+p {
+  border: 2px solid brown;
+  color: black;
+  background-color: gainsboro;
+  padding: 2px;
+  text-align: justify;
+}
+.borderLine {
+  border: 5px double dodgerblue;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+.button,
+.fancybutton {
+  border-radius: 40px;
+  width: 250px;
+  height: 50px;
+}
+.fancybutton {
+  background-color: black;
+  color: white;
+}
+.circle {
+  border: 3px solid darkblue;
+  padding: 5px;
+  border-radius: 50%;
+}
+.square {
+  border: 3px solid darkcyan;
+  padding: 5px;
+}
