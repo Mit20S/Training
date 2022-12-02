@@ -1,3 +1,99 @@
+  /* --------MEDIA QUERY----------- */
+  @media only screen and (max-width: 480px){
+    .topbarmq{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navBar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .navBarDropDown{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }  
+
+    .tabsBarmq{
+        text-align: center;
+    }
+
+    .imgColumn{
+        width:100px;
+        height:50px;
+        /* border: 10px solid red; */
+        margin: 0 !important; 
+    }
+    .columnContent{
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        margin:0 !important;
+        padding: 2px !important;
+    }
+
+    .carouselFontmq{
+        font-size: small !important;
+
+    }
+
+    .imgCarousel{
+        background-color: rgba(255, 255, 255, 0.5);
+        height: 150px !important;
+        border-radius: 10px;
+    }
+
+    .custmq{
+        width:80px;
+    }
+
+    .custfontmq{
+        font-size: medium;
+    }
+
+    .footermq{
+        width: 20%;
+    }
+
+}
+
+@media only screen and (max-width:950px){
+    .navBar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .navBarDropDown{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } 
+
+    .imgColumn{
+        margin-left: 250px !important;
+        text-align: center;
+    }
+
+    .columnContent{
+        margin-left: 30px;
+    }
+
+    .imgPS{
+        margin-left: 300px !important;
+    }
+}
+
+
+
+
 /* ---------BODY------------------ */
 .backImg{
     background-image: url("background.jpg");
@@ -312,21 +408,5 @@ footer{
     border-left: 5px solid #56be08;
   }
 
-  @media screen and (max-width: 1000px){
-    .topbarmq{
-        display: flex;
-        justify-content: center;
-    }
 
-    .navBar{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .navBarDropDown{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
   

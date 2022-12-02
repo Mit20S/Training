@@ -1,3 +1,75 @@
+/* --------MEDIA QUERY----------- */
+@media only screen and (max-width: 480px){
+    .topbarmq{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navBar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .navBarDropDown{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }  
+
+    .tabsBarmq{
+        text-align: center;
+    }
+
+    .headingmq{
+        text-align: center;
+    }
+
+    .footermq{
+        width: 20%;
+    }
+
+    .formmq{
+        width:300px;
+    }
+
+    .formImg{
+        width:300px !important;
+        height:250px !important;
+    }
+
+}
+
+@media only screen and (max-width:950px){
+    .navBar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .navBarDropDown{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .formImg{
+        margin: 0px 150px;
+    }
+
+    .formmq{
+        text-align: center;
+    }
+    
+
+
+}
+
+
 /* ----TOP BAR---- */
 .topbaricon{
     font-family: "Icofont";
