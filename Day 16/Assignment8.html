@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment - 8</title>
+
+    <style>
+        .heading{
+            background-color: aquamarine;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Operations on Array</h1>
+    <hr/>
+    <button onclick="showdata()">Show Data</button>
+    <table id="tb1">
+        <tr>
+            <th class="heading">Course</th>
+            <th class="heading">Course</th>
+            <th class="heading">Course</th>
+            <th class="heading">Course</th>
+        </tr>
+    </table>
+
+    <script>
+        var tb1Obj = document.getElementById("tb1");
+        var arr1 = ["HTML5", "CSS3", "jQuery", "Angular JS", "Bootstrap"];
+        var data = "";
+
+        function showdata(){
+            tb1Obj.style.border = "2px double black";
+            tb1Obj.style.margin = "5px";
+
+
+            for(let i = 0; i < 15;  i++){			
+                if(i%4==0){
+                    data += "<tr>"
+                }		      
+                     
+                data += "<td>"	 +  arr1[i%5] +  "</td>";	
+                
+                if(i%4==3){
+                    data += "</tr>"
+                }
+            }
+            tb1Obj.innerHTML += data;
+        }
+    </script>
+</body>
+</html>

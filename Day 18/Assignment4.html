@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-4</title>
+</head>
+<body>
+    <h1>Cities</h1>
+    <hr/>
+
+    <script>
+        var citiesArray  = [ "Hyderabad", "Mumbai",  "Bangalore", "Gurgaon"];
+        // UPPER CASE
+        function upper(str){
+            return str.toUpperCase();
+        }
+
+        //FIRST CHARACTER
+        var arr2 = citiesArray.map(function(item){
+            return(item.slice(0,3));
+        })
+
+        //REPLACE a WITH @
+
+        var arr3 = citiesArray.map((item) =>{
+            var str1 = "";
+            for (i=0; i < item.length; i++){
+                if (item[i] == 'a'){
+                    str1 += "@";
+                }
+                else{
+                    str1 += item[i];
+                }
+            }
+            return str1;
+        })
+        var arr1 = citiesArray.map(upper);
+        console.log(arr1);
+        console.log(arr2);
+        console.log(arr3);
+    </script>
+</body>
+</html>

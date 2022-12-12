@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-3</title>
+</head>
+<body>
+    <h3>JavaScript Programming --   Dynamic DOM  </h3>
+		<hr/>
+		 
+        Employee Number: <input type="number" name="empno" id="empno"/>
+        <br/>
+        <br/>
+        Employee Name: <input type="text" name="ename" id="ename"/>
+        <br/>
+        <br/>
+        Job: <input type="text" name="job" id="job"/>
+        <br/>
+        <br/>
+        Salary: <input type="number" name="salary" id="salary"/>
+        <br/>
+        <br/>
+		<input type="button"   value="Add Rows"   onclick="fn_addRows()"  />
+	 
+		<br/><br/>
+		<table  id="table1"  border="2"  width="500"  cellpadding="10" cellspacing="0" align = "center">
+			<tr>
+					<th>Employee Number</th>
+					<th>Employee Name</th>
+					<th>Job</th>
+					<th>Salary</th>
+			</tr>
+		</table>
+
+        <script>
+            var empnoObj = document.getElementById("empno");
+            var enameObj = document.getElementById("ename");
+            var jobObj = document.getElementById("job");
+            var salaryObj = document.getElementById("salary");
+
+            function fn_addRows()
+			  {				
+					var tableObj = document.getElementById("table1");
+			 
+					var row = tableObj.insertRow(-1);	// insert at last place
+
+					var cell1 = row.insertCell(0);
+					var cell2 = row.insertCell(1);
+					var cell3 = row.insertCell(2);
+					var cell4 = row.insertCell(3);
+
+					cell1.innerHTML = empnoObj.value;
+					cell2.innerHTML = enameObj.value;
+					cell3.innerHTML = jobObj.value;
+					cell4.innerHTML = salaryObj.value;
+
+                    empnoObj.value = "";
+                    enameObj.value = "";
+                    jobObj.value = "";
+                    salaryObj.value = "";
+
+			  }
+
+        </script>
+</body>
+</html>

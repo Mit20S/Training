@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-3</title>
+</head>
+<body>
+    <h1>Functions</h1>
+    <hr/>
+
+    <script>
+        var arr1 = [1,2,3,4,5,6,7,8,9,10];
+        var printObj = document.getElementById("p1");
+        // EVEN FUNCTION
+        function even(x){
+            var arr2 = [];
+            for (var i=0; i<arr1.length; i++){
+                if (x[i]%2 == 0){
+                    arr2.push(x[i]);
+                }
+            }
+            return arr2;
+        } 
+        // POWER FUCNTION
+         function power(x,y){
+            var result = 1;
+            for(var i=1; i<=y; i++ ){
+                result = result*x;
+            }
+            return result;
+         }
+
+         // STRING FUCNTION
+         function wordcount(str){
+            var arr3 = [];
+            arr3 = str.split(" ");
+            return arr3.length;
+
+         }
+        console.log(even(arr1));
+        console.log(power(2,4));
+        console.log(wordcount("Hi my name is blah blah"))
+    </script>
+</body>
+</html>

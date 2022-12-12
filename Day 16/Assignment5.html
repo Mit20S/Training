@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+</head>
+<body>
+    <h1>Loops</h1>
+    <hr/>
+    <button onclick="whileloop()">While Loop</button>
+    <button onclick="dowhileloop()">Do...While Loop</button>
+    <button onclick="forloop()">For Loop</button>
+    <ul id="list"></ul>
+
+    <script>
+        const listObj = document.getElementById("list");
+
+        function whileloop(){
+            listObj.innerHTML="";
+            let i=1;
+            while(i<=10){
+                listObj.innerHTML += "<li>Welcome to JavaScript - "+ i +"</li>";
+                i++;
+                listObj.style.color = "blue";
+            }
+        }
+
+        function dowhileloop(){
+            listObj.innerHTML="";
+            let i=1;
+            do{
+                listObj.innerHTML += "<li>Welcome to JavaScript - "+ i +"</li>";
+                i++;
+                listObj.style.color = "green";
+            }
+            while(i<10);
+        }
+
+        function forloop(){
+            listObj.innerHTML="";
+            for(let i=0; i<50; i+=5 ){
+                listObj.innerHTML += "<li>Welcome to JavaScript - "+ i +"</li>";
+                i++;
+                listObj.style.color = "red";
+            }
+        }
+    </script>
+</body>
+</html>

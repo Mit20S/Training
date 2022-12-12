@@ -1,0 +1,19 @@
+1. What is Regular Expression in JavaScript? How to validate email id using Regular Expression?
+---- Regular expression is a sequence of character which define a specific pattern and also named as abbreviated    regex or regexp and sometimes called a rational expression. we can make regular expression like ( “/ABC/”  ,”Ab_123.Cd” ,”abc123.-@&”…) 
+They can be patterns or combination of alphabets(a,b..z) ,numbers(0,1…9), special character     ( |, (),^, ), Quantifiers(*, +, ?), wildcards(.) character      set[], character ranges[start ,end].
+Email address validation through regular expression - /^w+[+.w-]*@([w-]+.)*w+[w-]*.([a-z]{2,4}|d+)$/i
+
+2.  What is map() method in Array?   How to use map() method?
+---- The map() method creates a new array populated with the results of calling a provided function on every
+    element in the calling array. 
+    Example: const map1 = array1.map(x => x+2);
+    Here map1 is the new array created using array1 where every element will be incremented by 2.
+
+5. Find the details about following methods of Array:
+	Find(): The arr.find() method in Javascript is used to get the value of the first element in the array that     satisfies the provided condition. It checks all the elements of the array and whichever the first element satisfies the condition is going to print. This function will not work function having the empty array elements, and also does not change the original array.
+
+    FindIndex(): It returns the index of the first element that passes a test. If no match is found, it returns -1 value. It doesn't change the original array. It doesn't execute the function for empty array elements.
+    array.findIndex(function-name, value)
+
+    Filter(): It creates a new array filled with elements that pass a test provided by a function. It does not execute the function for empty elements. It does not change the original array.
+

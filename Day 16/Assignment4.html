@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths Calculation</title>
+
+</head>
+<body>
+    <h1>Mathematical Operations</h1>
+    <hr/>
+    <form>
+        <fieldset>
+            <label>First Number:</label>
+            <input type="number" id="fnum"/>
+            <br/>
+            <br/>
+            <label>Second Number:</label>
+            <input type="number" id="secnum"/>
+            <br/>
+            <br/>
+            <button onclick="add(event)">Add</button>
+            <button onclick="sub(event)">Subtract</button>
+            <button onclick="mul(event)">Multiply</button>
+
+            <p id="result"></p>
+        </fieldset>
+    </form>
+
+
+    <script>
+            var fnumObj = document.getElementById("fnum");
+            var secnumObj = document.getElementById("secnum");
+            var resultObj = document.getElementById("result");
+
+        function add(e){
+            e.preventDefault();
+            resultObj.value = parseInt(fnumObj.value) + parseInt(secnumObj.value);
+
+			resultObj.innerHTML = "Result: " +  resultObj.value; 
+        }
+
+        function sub(e){
+            e.preventDefault();
+            resultObj.value = fnumObj.value - secnumObj.value;
+
+			resultObj.innerHTML = "Result: " +  resultObj.value; 
+        }
+
+        function mul(e){
+            e.preventDefault();
+            resultObj.value = fnumObj.value * secnumObj.value;
+
+			resultObj.innerHTML = "Result: " +  resultObj.value; 
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Calculation</title>
+
+</head>
+<body>
+    <form>
+        <fieldset>
+            <label>Product Name:</label>
+            <input type="text" id="pname"/>
+            <br/>
+            <br/>
+            <label>Unit Price:</label>
+            <input type="text" id="uprice"/>
+            <br/>
+            <br/>
+            <label>Quantity:</label>
+            <input type="text" id="quant"/>
+            <br/>
+            <br/>
+            <input type="submit" id="submit" value="Submit" onclick="total(event)"/>
+            <p id="total"></p>
+        </fieldset>
+    </form>
+
+
+    <script>
+        function total(e){
+            e.preventDefault();
+            var priceObj = document.getElementById("uprice");
+            var quantObj = document.getElementById("quant");
+            var totalObj = document.getElementById("total");
+
+            totalObj.value = priceObj.value * quantObj.value;
+
+			totalObj.innerHTML = "Total Amount: " +  totalObj.value; 
+
+        }
+    </script>
+</body>
+</html>

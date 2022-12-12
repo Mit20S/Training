@@ -1,0 +1,10 @@
+1.  How to add events to html elements at runtime  using javascript?
+---- The addEventListener() is an inbuilt function in JavaScript which takes the event to listen for, and a second argument to be called whenever the described event gets fired. Any number of event handlers can be added to a single element without overwriting existing event handlers.
+Syntax: element.addEventListener(event, listener, useCapture);
+
+2. How to use keypress, keyup, keydown events?
+---- keydown: This event is triggered when a key is pressed down.
+     keypress: This event is triggered when a key is pressed. This event fails to recognise keys such as tab,     shift, ctrl, backspace etc.
+     keyup: This event is triggered when a key is released.
+
+

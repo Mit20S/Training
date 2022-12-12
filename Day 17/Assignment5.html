@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Category</title>
+</head>
+<body>
+    <h1>Product Category</h1>
+    <hr>
+
+    <select onchange="hoverr()">
+        <option>Select</option>
+        <option>Laptops</option>
+        <option>Mobile Phones</option>
+        <option>Sound Systems</option>
+    </select>
+
+    <ol id="lis">
+        <!-- List Items - Java Script -->
+    </ol>
+
+    <script>
+        var list = document.getElementById("lis");
+
+        var lapp = ["Dell", "Asus", "HP", "Lenova"];
+        var mobb = ["Samsung", "Apple", "OnePlus" ,"Mi", "Vivo"];
+        var sound = ["Sony", "Samsung", "JBL", "LG", "Bose"];
+
+        function hoverr()
+        {   
+           
+            switch(event.target.value)
+            {
+                case "Laptops":
+                    list.innerHTML="";
+                    for(i=0; i<lapp.length; i++)
+                    {
+                        list.innerHTML += "<li>" + lapp[i] + "</li>";
+                    }
+                    break;
+
+                case "Mobile Phones":
+                    list.innerHTML="";
+                    for(i=0; i<mobb.length; i++)
+                    {
+                        list.innerHTML += "<li>" + mobb[i] + "</li>";
+                    }
+                    break;
+
+                case "Sound Systems":
+                    list.innerHTML="";
+                    for(i=0; i<sound.length; i++)
+                    {
+                        list.innerHTML += "<li>" + sound[i] + "</li>";
+                    }
+                    break;
+                
+            }
+
+        }
+
+    </script>
+</body>
+</html>
