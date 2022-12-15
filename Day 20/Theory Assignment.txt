@@ -2,6 +2,12 @@
 Find(): The arr.find() method in Javascript is used to get the value of the first element in the array that     satisfies the provided condition. It checks all the elements of the array and whichever the first element satisfies the condition is going to print. This function will not work function having the empty array elements, and also does not change the original array.
 
 FindIndex(): It returns the index of the first element that passes a test. If no match is found, it returns -1 value. It doesn't change the original array. It doesn't execute the function for empty array elements.
-array.findIndex(function-name, value)
+array.findIndex(function-name, value).
+Conditon based.
 
 Filter(): It creates a new array filled with elements that pass a test provided by a function. It does not execute the function for empty elements. It does not change the original array.
+
+2. How to add / remove events dynamically without using event attributes (eg:  onclick, ...)
+---- .addEventListener : The addEventListener() is an inbuilt function in JavaScript which takes the event to listen for, and a second argument to be called whenever the described event gets fired. Any number of event handlers can be added to a single element without overwriting existing event handlers. 
+    .removeEventListener : removeEventListener() is an inbuilt function in JavaScript which removes an event handler from an element for a attached event.for example, if a button is disabled after one click you can use removeEventListener() to remove a click event listener.
+ 	

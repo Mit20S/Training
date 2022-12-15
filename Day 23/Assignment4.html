@@ -1,0 +1,112 @@
+<!-- Create HTML Page to display Hello World message by using jQuery -->
+<html>
+ <head> 
+	<title>Assignment-4</title>
+ </head>
+ <body>
+	<h3> jQuery Programming  - DOM Traversing</h3>
+	<hr />
+		
+	 <input id="t1" placeholder="product name" />
+	<input id="t2" placeholder="unit price " />
+	<input id="t3" placeholder="quantity" />
+	<br></br> 
+
+ <table id="table1" border="2">
+	<tr>
+		<th></th>
+		<th>Product Name</th>
+		<th>Unit Price</th>
+		<th>Units In Stock</th>
+	</tr>
+	<tr>
+		<td><a href="#" class="selectid">Select</a><span> | </span><a href="#" class="removeid">Remove</a></td>
+        <td>Printer</td>
+		<td>2500.00</td>
+		<td>0</td>
+	</tr>
+	<tr>
+        <td><a href="#" class="selectid">Select</a><span> | </span><a href="#" class="removeid">Remove</a></td>
+        <td>4GB-RAM</td>
+		<td>1200.00</td>
+		<td>23</td>
+	</tr>	 
+	<tr>
+        <td><a href="#" class="selectid">Select</a><span> | </span><a href="#" class="removeid">Remove</a></td>
+        <td>Printer</td>
+		<td>2500.00</td>
+		<td>20</td>
+	</tr>
+	<tr>
+        <td><a href="#" class="selectid">Select</a><span> | </span><a href="#" class="removeid">Remove</a></td>
+		<td>1TB Samsung HDD</td>
+		<td>4500.00</td>
+		<td>0</td>
+	</tr>
+	<tr>
+        <td><a href="#" class="selectid">Select</a><span> | </span><a href="#" class="removeid">Remove</a></td>
+        <td>32-GB Kingston USB</td>
+		<td>800.00</td>
+		<td>35</td>
+	</tr>
+	<tr>
+	    <td><a href="#" class="selectid">Select</a><span> | </span><a href="#" class="removeid">Remove</a></td>
+        <td>Wifi Router</td>
+		<td>1800.00</td>
+		<td>15</td>
+	</tr> 
+	</table>  
+		 
+ 
+	
+	<script  src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+	
+	<script>
+	
+		$(document).ready(function()
+		{
+				
+			 $("#table1 .selectid").click(function()
+			 {
+				let pname  =   $(this).parent().siblings().eq(1).text();
+				let price  =   	  $(this).parent().siblings().eq(2).text();
+				let qty  =   		  $(this).parent().siblings().eq(3).text();
+				
+				$("#t1").val(  pname  );
+				$("#t2").val(  price  );
+				$("#t3").val(  qty  );
+					
+					// $(this).parent().parent().css("background-color", "pink");
+                    
+			 });
+
+             $("#table1 .removeid").click(function()
+             {
+                $(this).parent().parent().remove();
+             });
+
+             for(i=1; i<$("#table1 tr").length; i++)
+             {
+                // console.log(i);
+                var qty = $("#table1 tr").eq(i).children().eq(3).text();
+
+                if(qty == 0)
+                {
+                    $("#table1 tr").eq(i).css("background-color","pink");
+                }
+                else{
+                    $("#table1 tr").eq(i).css("background-color","lightgreen");
+                }
+                
+             }
+
+             $("#table1 tr:first").css("background-color","lightblue");
+             $("#table1 tr:last").css("background-color","lightblue");
+
+		 
+		});
+				
+	</script>
+	
+ </body>
+</html>

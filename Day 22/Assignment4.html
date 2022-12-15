@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Calculation</title>
+
+    <script  src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+
+</head>
+<body>
+    <form id = "form1">
+        <fieldset>
+            <legend><strong><i>Product Details</i></strong></legend>
+            <br/>
+            <label>Product Name:</label>
+            <input type="text" id="pname"/>
+            <br/>
+            <br/>
+            <label>Unit Price:</label>
+            <input type="text" id="uprice"/>
+            <br/>
+            <br/>
+            <label>Quantity:</label>
+            <input type="text" id="quant"/>
+            <input type="button" id="submit" value="Submit"/>
+            <br/>
+            <br/>
+            <label>Total:</label>
+            <input type="text" readonly id="total"/>
+            <br/>
+            <br/>
+            <input type="button" id="clear" value="Clear"/>
+        </fieldset>
+    </form>
+
+
+    <script>
+        $(document).ready(function()
+        {
+            $("fieldset").css("background-color","beige");
+            $("#submit").click(function()
+            {
+                let price = $("#uprice").val();
+                let quant = $("#quant").val();
+                if(quant > 10){
+                    let total = (parseInt(price)*parseInt(quant)) - (0.1*parseInt(price)*parseInt(quant));
+                    $("#total").val(total);
+                }
+                else{
+                    let total = parseInt(price)*parseInt(quant);
+                    $("#total").val(total);
+                }
+            });
+            $("#clear").click(function()
+            {
+                $("input[type = text]").val(" ");
+            })
+        });
+    </script>
+</body>
+</html>

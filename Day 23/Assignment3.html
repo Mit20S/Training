@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>Assignment-3</title>
+    <script  src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+    <style>
+        #table1{
+            border:2px solid brown;
+            text-align: center;
+        }
+        tr{
+            border:2px solid brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Product Details</h1>
+    <hr/>
+    <br/>
+    
+    <!-- <input type="text" name="Product Price" id="price" placeholder="Enter Product Price here"> -->
+    
+    
+    <br/>
+    <br/>
+    <table id="table1">
+        <tr>
+            <th><strong>Product Name</strong></th>
+            <th><strong>Product Price</strong></th>
+            <th><strong>Product Quantity</strong></th>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" name="Product Name" id="pname" placeholder="Enter Product Name here">
+            </td>
+            <td>
+                <input type="text" name="Product Price" id="price" placeholder="Enter Product Price here">
+            </td>
+            <td>
+                <input type="text" name="Product Quantity" id="quant" placeholder="Enter Product Quantity here">
+            </td>
+            <td>
+                <input type="button" value = "ADD" id="btn"/>
+            </td>
+
+        </tr>
+    </table>
+    <script>
+        $(document).ready(function()
+        {
+            $("#btn").click(function()
+            {
+                var pname  = $("#pname").val();
+                var price  = $("#price").val();
+                var quant  = $("#quant").val();
+                var str = "<tr><td>" + pname+"</td><td>"+price+"</td><td>"+quant+"</td></tr>";
+
+                $("#table1").append(str);
+
+                $("#pname").val(" ");
+                $("#price").val(" ");
+                $("#quant").val(" ");
+            });
+            $("#table1 tr:first").css("background-color","lightblue");
+
+        });
+    </script>
+</body>
+</html>

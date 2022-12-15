@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script  src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+
+    <style>
+        #divstyle{
+            background-color: black;
+            display: flex;
+            color: white;
+            flex-direction: column;
+            width:500px;
+            align-items: center;
+            padding-top: 40px;
+            font-size: 80px;
+        }
+        #buttons{
+            padding: 100px;
+        }
+        #startbtn{
+            background-color: green;
+            color: white;
+            font-size:20px;
+            border-radius: 10%;
+            margin:30px;
+            padding:10px; 
+        }
+        #resetbtn{
+            background-color: red;
+            color: white;
+            font-size:20px;
+            border-radius: 10%;
+            margin:30px;
+            padding:10px;
+        } 
+    </style>
+</head>
+<body>
+    <div id="divstyle">
+        <div id="timer">
+            <span id="hours">00:</span>
+            <span id="mins">00:</span>
+            <span id="seconds">00</span>
+        </div>
+        <!-- <br/>
+        <br/> -->
+        <div id="buttons">
+            <button id="startbtn">Start</button>
+            <!-- <button id="stopbtn">Stop</button> -->
+            <button id="resetbtn">Clear</button>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            var hours = 0;
+            var mins = 0;
+            var seconds = 0;
+            $("#startbtn").click(function () {
+                startTimer();
+            });
+
+            $("#stopbtn").click(function () {
+                clearTimeout(timex);
+            });
+            $("#resetbtn").click(function () {
+                hours = 0;
+                mins = 0;
+                seconds = 0;
+                $("#hours", "#mins").html("00:");
+                $("#seconds").html("00");
+            });
+            function startTimer() {
+                timex = setTimeout(function () {
+                    seconds++;
+                    if (seconds > 59) {
+                        seconds = 0;
+                        mins++;
+                        if (mins > 59) {
+                            mins = 0;
+                            hours++;
+                            if (hours < 10) {
+                            $("#hours").text("0" + hours + ":");
+                            } 
+                            else $("#hours").text(hours + ":");
+                        }
+                        if (mins < 10) {
+                        $("#mins").text("0" + mins + ":");
+                        } 
+                        else $("#mins").text(mins + ":");
+                    }
+                    if (seconds < 10) {
+                        $("#seconds").text("0" + seconds);
+                    } 
+                    else {
+                        $("#seconds").text(seconds);
+                    }
+                    startTimer();
+                }, 1000);
+            }
+}); 
+    </script>
+</body>
+</html>

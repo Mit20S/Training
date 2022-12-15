@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Employee Data</h1>
+    <hr/>
+    <input type="button"   value="Get Data" onclick="fn_getdata()"/>
+    <p id = "p1"></p>
+    <script>
+        class Employee{
+            constructor(empno,ename,job){
+                this.empno = empno;
+                this.ename = ename;
+                this.job = job;
+            }
+            showDetails(){
+                var pObj = document.getElementById("p1");
+                pObj.innerHTML += `Employee Name = ${this.ename}, 
+                <br/>
+                Employee Number = ${this.empno},
+                <br/> 
+                Job = ${this.job}`;
+            }
+        }
+        function fn_getdata(){
+            var obj = new Employee(1,"Scott","Analyst");
+            obj.showDetails();
+
+        }
+    </script>
+</body>
+</html>

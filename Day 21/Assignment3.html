@@ -1,0 +1,71 @@
+<html>
+<head>
+    <title>Assignment-3</title>
+</head>
+<body>
+<h3>Asynchronous Programming in  JavaScript</h3>
+	<hr/> 
+	
+	<button  onclick="fn_getData()">Get Data </button>
+	<br/><br/>
+	<table  id="table1"  border="1"  width="500"  cellpadding="10" cellspacing="0" align = "center">
+        <tr>
+                <th>Name</th>
+                <th>City</th>
+                <th>Country</th>
+        </tr>
+    </table>
+	 
+	 
+	<script>	 
+
+	function fn_getData()
+	{ 
+		let url = "https://www.w3schools.com/angular/customers.php";
+		
+		fetch(url).then(  (response)  => 
+		{
+			response.json().then((resData)  =>  
+			{ 
+                    // console.log(resData);
+					displayData(resData.records);
+			});
+		})
+        // .catch((error) => 
+		// {
+		// 		lstObj.innerHTML = "";
+		// 		lstObj.innerHTML  +=  "<li  style='color:red;'>" + error +  "</li>"
+		// });
+	}  
+	
+	
+	function  displayData( dataArray )
+	{
+        var str  = " ";
+        // for(var i = 1;i<tableObj.rows.length;)
+        // {
+        //     tableObj.deleteRow(i);
+        // }
+        
+        for( var item of dataArray )
+        { 
+			str  +=  "<tr>";	
+            str  +=  "<td>" +   item.Name + "</td>";	
+            str  +=  "<td>" +   item.City + "</td>";	
+            str  +=  "<td>" +   item.Country + "</td>";	
+            // str  +=  "<td>" +   item.name + "</td>";	
+            // str  +=  "<td>" +   item.job + "</td>";	
+            str  +=  "</tr>";	
+		}
+		var tableObj = document.getElementById("table1");			 	
+        tableObj.innerHTML += str;
+
+    }    
+	
+	</script>	 
+</body>
+</html>
+
+
+
+

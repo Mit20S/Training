@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-3</title>
+</head>
+<body>
+    <h3>JavaScript Programming --   Dynamic DOM  </h3>
+		<hr/>
+        <input type="text" placeholder="Enter data here" id = "data"/>
+        <br/>
+        <br/>
+		<input type="button"   value="Find By Employee No."   onclick="fn_empno()"  />
+        &nbsp;
+        <input type="button"   value="Find By Job"   onclick="fn_job()"  />
+	 
+		<br/><br/>
+		<table  id="table1"  border="1"  width="500"  cellpadding="10" cellspacing="0" align = "center">
+			<tr>
+					<th>Employee Number</th>
+					<th>Employee Name</th>
+					<th>Job</th>
+			</tr>
+		</table>
+
+        <script>
+
+            const empData = [{"empno":1, "job":"CONSULTANT", "name":"ABC"},
+                            {"empno":2, "job":"ANALYST", "name":"DEF"},
+                            {"empno":3, "job":"ANALYST", "name":"GHI"},
+                            {"empno":4, "job":"DESIGNER", "name":"JKL"}
+                        ];
+            
+            var dataObj = document.getElementById("data");
+            var  tableObj =  document.getElementById("table1");
+            function fn_empno()
+			  {				
+                var empnoArray = empData.filter(item => item.empno == dataObj.value);
+                var str  = " ";
+                for(var i = 1;i<tableObj.rows.length;){
+                    tableObj.deleteRow(i);
+                }
+                
+						
+						for( var item in empnoArray )
+						{ 
+							str  +=  "<tr>";	
+							str  +=  "<td>" +   empnoArray[item].empno + "</td>";	
+							str  +=  "<td>" +   empnoArray[item].name + "</td>";	
+							str  +=  "<td>" +   empnoArray[item].job + "</td>";	
+							// str  +=  "<td>" +   item.name + "</td>";	
+							// str  +=  "<td>" +   item.job + "</td>";	
+							str  +=  "</tr>";	
+						}
+						 	
+						tableObj.innerHTML += str;
+                
+			  }
+
+              function fn_job()
+			  {				
+                var jobArray = empData.filter(item => item.job == dataObj.value.toUpperCase());
+                var str  = "";
+						
+						for( var item in jobArray )
+						{ 
+							str  +=  "<tr>";	
+							str  +=  "<td>" +   jobArray[item].empno + "</td>";	
+							str  +=  "<td>" +   jobArray[item].name + "</td>";	
+							str  +=  "<td>" +   jobArray[item].job + "</td>";	
+							// str  +=  "<td>" +   item.name + "</td>";	
+							// str  +=  "<td>" +   item.job + "</td>";	
+							str  +=  "</tr>";	
+						}
+						
+						var  tableObj =  document.getElementById("table1");	 	
+						tableObj.innerHTML += str;
+                
+			  }
+
+              
+
+        </script>
+</body>
+</html>

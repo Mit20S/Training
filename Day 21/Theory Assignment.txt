@@ -1,0 +1,7 @@
+1. What is setInterval()  and setTimeout() methods in JavaScript?
+---- setTimeout() method executes a function after a period of milliseconds
+    setInterval() executes a function continuously after a certain period of milliseconds have passed.
+    
+2. What is Asynchronous?
+---- The word asynchronous means not occurring at the same time.
+Asynchronous JavaScript simply implies the fact that the user will receive the data in a faster manner.

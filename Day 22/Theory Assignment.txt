@@ -1,0 +1,24 @@
+1.  How to hide html element using JavaScript?
+---- .style.display = "none"; (to show - "block")
+     OR
+     .style.visibility = "hidden"; (to show - "visible")
+
+2. How to change text color of all paragraphs in the document using JavaScript?
+---- Access the p elements using 'getElementsByTagName'. It will give an array. Iterate over this array to    apply color using .style.color to each element of the array i.e. each p element stored in the array.
+    const collection = document.getElementsByTagName("p");
+    for(let item of collection){
+        item.style.color = "blue";
+    }
+
+3. How to change text color of all paragraphs in the document using jquery?
+---- ${"p"}.css("color","blue"};
+
+5.  How to select all textboxes using jQuery selector?
+---- $("input[type = text]").val("");
+
+6.  What is the difference between   "this" and  $(this) in jquery programming?
+---- this is the DOM object, whereas $(this) is the jQuery wrapper around same.
+When using this, you can call DOM methods on it, but not jQuery methods. When using $(this), you can call jQuery methods on it, but not DOM methods.
+
+    
+
