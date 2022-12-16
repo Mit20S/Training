@@ -1,0 +1,12 @@
+1. How to add CSS class to html tag using jquery?
+---- addClass() - Adds one or more classes to the selected elements
+removeClass() - Removes one or more classes from the selected elements
+toggleClass() - Toggles between adding/removing classes from the selected elements
+css() - Sets or returns the style attribute
+
+2. How to apply effect based on width property?
+---- The animate() method performs a custom animation of a set of CSS properties. 
+    Syntax: (selector).animate({styles},speed,easing,callback)
+
+
+

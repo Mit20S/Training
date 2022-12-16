@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+	<h3> jQuery  -  Getting remote data  from  Server using AJAX </h3>
+	<hr />
+ 
+	<button  id="b1">Get Server Data</button>
+	<hr/>
+	<table  id="table1" align="center"  border="1"  cellpadding="5"  cellspacing="0"  width="600">
+		<tr>
+			<th>Id</th>
+			<th>Name</th>
+			<th>email</th>
+			<th>Gender</th>
+			<th>Status</th>
+		</tr>
+		
+	</table>
+	
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+	</script>
+
+<script>
+			$(document).ready(function(){
+			
+				  $("#b1").click(function(){			
+				  
+				  
+						$.ajax( { 
+								url  :  "https://gorest.co.in/public/v2/users",
+								type :  "GET",						 
+								success :  function( response )
+								{
+										// code to process the response 
+										// let  resData =  JSON.parse(response);
+										displayData(  response );
+								} 
+						} ); 
+				}); 
+		});
+		
+		
+		
+		function displayData(  dataArray  )
+		{
+				//  $("#table1 tr").slice(1).remove();
+				// 	 $("#table1 tr").not(":first").remove();
+				//	 $("#table1").find("tr:gt(0)").remove();
+		
+				for(let item of  dataArray)
+				{
+					let  str = ` <tr>  <td> ${item.id} </td>  <td> ${item.name} </td>  <td> ${item.email} </td> <td> ${item.gender} </td> <td> ${item.status} </td> </tr> `;
+					
+					$("#table1").append(str);
+				}		
+
+				// $("#table1   tr:even").css("background-color", "pink");
+				// $("#table1   tr:odd").css("background-color", "lightgreen"); 
+				
+				$("#table1   tr:first").css({ "background-color":"darkgray", "color" : "black"}); 
+		}
+						
+			
+
+</script>
+
+</body>
+</html>

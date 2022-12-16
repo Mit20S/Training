@@ -75,26 +75,26 @@
 				
 			 $("#table1   .selectid").click(function()
 			 {
-                for(i=0; i<=$("#table1 tr").length; i++){
-						$("#table1 tr").eq(i).css("background-color", "white");
-					}
-					let pname  =   $(this).parent().siblings().eq(1).text();
-					let price  =   	  $(this).parent().siblings().eq(2).text();
-					let qty  =   		  $(this).parent().siblings().eq(3).text();
-					
-					$("#t1").val(  pname  );
-					$("#t2").val(  price  );
-					$("#t3").val(  qty  );
-					
-					$(this).parent().parent().css("background-color", "pink");
+				$("#table1 tr").css("background-color", "white");
+              
+				let pname  =   $(this).parent().siblings().eq(1).text();
+				let price  =   	  $(this).parent().siblings().eq(2).text();
+				let qty  =   		  $(this).parent().siblings().eq(3).text();
+				
+				$("#t1").val(  pname  );
+				$("#t2").val(  price  );
+				$("#t3").val(  qty  );
+				
+				$(this).parent().parent().css("background-color", "pink");
                     
 			 });
 
              $("#table1 .removeid").click(function()
              {
-                for(i=0; i<=$("#table1 tr").length; i++){
-						$("#table1 tr").eq(i).css("background-color", "white");
-					}
+                $("#table1 tr").css("background-color", "white");
+				$("#t1").val(  " "  );
+				$("#t2").val(  " "  );
+				$("#t3").val(  " "  );
                 $(this).parent().parent().remove();
              });
 
