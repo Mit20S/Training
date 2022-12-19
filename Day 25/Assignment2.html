@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-1</title>
+
+    <script  src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+
+</head>
+<body>
+    <h1>Display CSV Values in List Format using JQuery</h1>
+    <hr/>
+    <label for="stringdata">Input String - </label>
+    <input type="text" id="stringdata" name="stringdata"/>
+    <input type="button" id="getData" value="Get Data"/>
+    <br/>
+    <ul id="list1"></ul>
+
+    <script>
+        $(document).ready(function(){
+            
+            
+            $("#getData").click(function()
+            {
+                var str = $("#stringdata").val();
+                // console.log(str);
+                const dataArray = str.split(",");
+                // console.log(dataArray.length);
+                for(let i of dataArray){
+                    let lielement = `<li>${i.toUpperCase()}</li>`;
+                    $("#list1").append(lielement);
+                }
+            });
+
+        });
+    </script>
+
+</body>
+</html> 

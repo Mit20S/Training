@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-4</title>
+    <script  src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
+
+    <style>
+        /* #table1{
+            border:5px double black;
+        } */
+        td{
+            border:1px solid black;
+            text-align: center;
+            
+            /* border-bottom:1px solid black ; */
+        }
+    </style>
+</head>
+<body>
+    <h1>Using String Methods in JQuery Application</h1>
+    <hr/>
+    <input type="button" id="getData" value="Get Data"/>
+    <table id="table1"></table>
+
+    <script>
+        $(document).ready(function(){
+            const customerObj = { cardNumber : 1234456778997896, chName : "Narasimha Rao",  cardType : "Visa",  expireMonth : 9,  expireYear : 2050};
+
+            const month = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
+            $("#getData").click(function(){
+                $("#table1").html(" ");
+                var monthName = month[customerObj.expireMonth - 1];
+                var expiryDate = monthName + " " + customerObj.expireYear;
+                // console.log(monthName);
+
+                var cardNumber = "****-****-****-"+ customerObj.cardNumber.toString().slice(-4);
+                // console.log(cardNumber);
+
+                // console.log(expiryDate);
+
+                let str = `<tr><td>Credit Card Number</td><td>${cardNumber}</td></tr>
+                <tr><td>Card Holder Name</td><td>${customerObj.chName}</td></tr>
+                <tr><td>Card Type</td><td>${customerObj.cardType.toUpperCase()}</td></tr>
+                <tr><td>Expiry Date</td><td>${expiryDate}</td></tr>`;
+
+                $("#table1").append(str);
+                // $("#table1").css({"border":"2px solid, blue", "cellspacing":"10px"});
+
+
+                
+            });
+
+        });
+    </script>
+</body>
+</html>
