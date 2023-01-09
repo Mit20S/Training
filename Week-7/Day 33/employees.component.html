@@ -1,0 +1,26 @@
+<style>
+    td{
+        border: 2px solid Black;
+        text-align: center;
+    }
+</style>
+
+
+<h1>Employee Details</h1>
+<hr/>
+<div> 
+    <table>
+        <tr>
+            <th>S.No.</th>
+            <th>Employee Name</th>
+            <th>Performance Grades</th>
+            <th>Performance Grades</th>
+        </tr>
+        <tr *ngFor="let emp of empArray | range : 0 : 101">
+            <td>{{emp.empno}}</td>
+            <td>{{emp.empname}}</td>
+            <td>{{emp.performance}}</td>
+            <td>{{emp.performance | grades}}</td>
+        </tr>
+    </table>
+</div>

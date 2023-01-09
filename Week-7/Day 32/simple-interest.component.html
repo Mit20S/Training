@@ -1,0 +1,41 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    main{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+    fieldset{
+        background-color: rgb(10, 10, 75);
+        text-align: center;
+        color: white;
+        padding: 10px;
+    }
+</style>
+<main>
+    <fieldset>
+        <h2>Simple Interest Calculator</h2>
+        <br/>
+        Principal Amount  :  <input type="number"  [(ngModel)]="principal" />
+        <br/><br/>
+
+        Rate % Per Year  :  <input type="number" [(ngModel)]="rate" />
+        <br/><br/>
+
+        Time Period (In Years)  :  <select name="time" [(ngModel)] = "time">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <br/><br/>
+
+        <input type="button" value="Calculate Simple Interest" (click)="si_calc()" class=" btn btn-info" />
+        <br/>
+        <br/>
+        <p>{{message}}</p>
+
+    </fieldset>
+</main>
+
+ 
